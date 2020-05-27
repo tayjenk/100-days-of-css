@@ -13,26 +13,38 @@
         margin: 150px auto;
         background-color: #FFE3DC;
       }
-
       #large-circle {
         position: absolute;
         left: 50%;
-        top: 50%;
-        margin-top: -100px;
+        margin-top: 150px;
         margin-left: -50px;
         background-color: #432534;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         z-index: 1;
+      }
+      #medium-circle {
+        background-color: #DBB4AD;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: 15px;
       }
     </style>
   </head>
   <body>
     <main id="frame">
-      <div id="large-circle"></div>
-      <!-- <div id="medium-circle"></div>
-      <div id="small-circle"></div> -->
+      <div id="large-circle">
+        <div id="medium-circle">
+          
+        </div>
+      </div>
+      <!-- <div id="small-circle"></div> -->
     </main>
   </body>
 </html>
