@@ -27,7 +27,6 @@
         width: 300px;
         height: 300px;
         border-radius: 80px;
-        z-index: 1;
       }
       #gradient-sq-layer {
         background: linear-gradient(
@@ -36,13 +35,22 @@
           rgba(253, 29, 29, 1) 50%,
           rgba(252, 176, 69, 1) 100%
         );
-        width: 250px;
-        height: 250px;
+        width: 260px;
+        height: 260px;
         border-radius: 80px;
-        z-index: 2;
         position: absolute;
         left: 50%;
-        margin-left: -125px;
+        margin-left: -130px;
+        margin-top: 20px;
+      }
+      #mini-white-circle-layer {
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        left: 70%;
+        /* margin-left: -125px; */
         margin-top: 25px;
       }
       #white-circle-layer {
@@ -50,11 +58,10 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        z-index: 1;
         position: absolute;
         left: 50%;
         margin-left: -75px;
-        margin-top: 50px;
+        margin-top: 70px;
       }
       #gradient-circle-layer {
         background: linear-gradient(
@@ -66,7 +73,6 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        z-index: 1;
         position: absolute;
         left: 50%;
         margin-left: -50px;
@@ -78,6 +84,7 @@
     <main id="frame">
       <div id="white-sq-layer">
         <div id="gradient-sq-layer">
+          <div id="mini-white-circle-layer"></div>
           <div id="white-circle-layer">
             <div id="gradient-circle-layer"></div>
           </div>
