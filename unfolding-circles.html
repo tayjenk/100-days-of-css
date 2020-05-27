@@ -45,13 +45,13 @@
       }
       #mini-white-circle-layer {
         background-color: #fff;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         position: absolute;
-        left: 70%;
-        /* margin-left: -125px; */
+        left: 75%;
         margin-top: 25px;
+        animation: jumpMini 2s cubic-bezier(0.42, 0.97, 0.52, 1.49) infinite alternate;
       }
       #white-circle-layer {
         background-color: #fff;
@@ -63,6 +63,7 @@
         margin-left: -75px;
         margin-top: 70px;
         box-shadow: 8px 16px 20px 0 rgba(0, 0, 0, 0.3);
+        animation: jumpOuter 2s cubic-bezier(0.42, 0.97, 0.52, 1.49) infinite alternate;
       }
       #gradient-circle-layer {
         background: linear-gradient(
@@ -79,6 +80,37 @@
         margin-left: -50px;
         margin-top: 25px;
         box-shadow: 4px 8px 15px 0 rgba(0, 0, 0, 0.3);
+        animation: jumpCenter 2s cubic-bezier(0.42, 0.97, 0.52, 1.49) infinite alternate;
+      }
+      @keyframes jumpMini {
+        0%, 70% {
+          box-shadow: 2px 2px 3px 2 rgba(0, 0, 0, 0.2);
+          transform: scale(0);
+        }
+        100% {
+          box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+          transition: scale(1);
+        }
+      }
+      @keyframes jumpCenter {
+        0%, 40% {
+          box-shadow: 2px 2px 3px 2 rgba(0, 0, 0, 0.2);
+          transform: scale(0);
+        }
+        100% {
+          box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+          transform: scale(1);
+        }
+      }
+      @keyframes jumpOuter {
+        0%, 30% {
+          box-shadow: 2px 2px 3px 2 rgba(0, 0, 0, 0.2);
+          transform: scale(0);
+        }
+        100% {
+          box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+          transform: scale(1);
+        }
       }
     </style>
   </head>
